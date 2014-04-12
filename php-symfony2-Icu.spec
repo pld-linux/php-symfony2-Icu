@@ -3,17 +3,18 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Icu Component
 Name:		php-symfony2-Icu
-Version:	1.2.0
+Version:	1.2.1
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/Icu/archive/v%{version}/%{pearname}-%{version}.tar.gz
-# Source0-md5:	c8f4620029e716602d3c0699a0ae2569
+# Source0-md5:	c607b356cb6e817e7ea14ddd0f4ca307
 URL:		https://github.com/symfony/Icu
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	libicu >= 4.4
 Requires:	php(core) >= %{php_min_version}
+Requires:	php(ctype)
 Requires:	php-pear >= 4:1.3.10
 Requires:	php-symfony2-Intl >= 2.3
 BuildArch:	noarch
