@@ -31,7 +31,7 @@ through the API of the Intl component.
 mv Resources/data/*.txt .
 
 %build
-phpab -n -e '*/Tests/*' -o autoload.php .
+phpab -n -e '*/Tests/*' -o autoloader.php .
 
 %install
 rm -rf $RPM_BUILD_ROOT
