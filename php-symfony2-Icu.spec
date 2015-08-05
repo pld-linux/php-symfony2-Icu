@@ -1,3 +1,7 @@
+# NOTE:
+# [DEPRECATED] This repository only exists for BC compatibility with old
+# versions of Symfony. Recent versions comes with ICU data.
+
 %define		pearname	Icu
 %define		php_min_version 5.3.3
 %include	/usr/lib/rpm/macros.php
