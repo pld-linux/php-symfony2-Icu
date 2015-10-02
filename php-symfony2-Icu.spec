@@ -12,7 +12,7 @@ Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{pearname}/archive/v%{version}/%{pearname}-%{version}.tar.gz
-# Source0-md5:	66893e27c0d49f8d829c7791b0a947e6
+# Source0-md5:	7679e2d3b1235c4cdc343bd2f1213de9
 URL:		https://github.com/symfony/Icu
 BuildRequires:	phpab
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -30,7 +30,7 @@ Contains the data of the ICU library in a specific version. Use it
 through the API of the Intl component.
 
 %prep
-%setup -q -n %{pearname}-%{version}
+%setup -q -n icu-%{version}
 
 mv Resources/data/*.txt .
 
