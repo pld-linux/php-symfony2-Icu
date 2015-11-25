@@ -15,12 +15,10 @@ Source0:	https://github.com/symfony/%{pearname}/archive/v%{version}/%{pearname}-
 # Source0-md5:	7679e2d3b1235c4cdc343bd2f1213de9
 URL:		https://github.com/symfony/Icu
 BuildRequires:	phpab
-BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	libicu >= 4.4
 Requires:	php(core) >= %{php_min_version}
 Requires:	php(ctype)
-Requires:	php-pear >= 4:1.3.10
 Requires:	php-symfony2-Intl >= 2.3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
