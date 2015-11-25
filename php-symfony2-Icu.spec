@@ -39,8 +39,8 @@ phpab -n -e '*/Tests/*' -o autoload.php .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{pearname}
-cp -a Icu*.php Resources $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{pearname}
+install -d $RPM_BUILD_ROOT%{php_data_dir}/Symfony/Component/%{pearname}
+cp -a Icu*.php Resources $RPM_BUILD_ROOT%{php_data_dir}/Symfony/Component/%{pearname}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -48,22 +48,22 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc LICENSE README.md *.txt
-%dir %{php_pear_dir}/Symfony/Component/Icu
-%{php_pear_dir}/Symfony/Component/Icu/IcuCurrencyBundle.php
-%{php_pear_dir}/Symfony/Component/Icu/IcuData.php
-%{php_pear_dir}/Symfony/Component/Icu/IcuLanguageBundle.php
-%{php_pear_dir}/Symfony/Component/Icu/IcuLocaleBundle.php
-%{php_pear_dir}/Symfony/Component/Icu/IcuRegionBundle.php
+%dir %{php_data_dir}/Symfony/Component/Icu
+%{php_data_dir}/Symfony/Component/Icu/IcuCurrencyBundle.php
+%{php_data_dir}/Symfony/Component/Icu/IcuData.php
+%{php_data_dir}/Symfony/Component/Icu/IcuLanguageBundle.php
+%{php_data_dir}/Symfony/Component/Icu/IcuLocaleBundle.php
+%{php_data_dir}/Symfony/Component/Icu/IcuRegionBundle.php
 
-%dir %{php_pear_dir}/Symfony/Component/Icu/Resources
-%dir %{php_pear_dir}/Symfony/Component/Icu/Resources/data
-%dir %{php_pear_dir}/Symfony/Component/Icu/Resources/data/curr
-%dir %{php_pear_dir}/Symfony/Component/Icu/Resources/data/lang
-%dir %{php_pear_dir}/Symfony/Component/Icu/Resources/data/locales
-%dir %{php_pear_dir}/Symfony/Component/Icu/Resources/data/region
+%dir %{php_data_dir}/Symfony/Component/Icu/Resources
+%dir %{php_data_dir}/Symfony/Component/Icu/Resources/data
+%dir %{php_data_dir}/Symfony/Component/Icu/Resources/data/curr
+%dir %{php_data_dir}/Symfony/Component/Icu/Resources/data/lang
+%dir %{php_data_dir}/Symfony/Component/Icu/Resources/data/locales
+%dir %{php_data_dir}/Symfony/Component/Icu/Resources/data/region
 
 # TODO: lang tags
-%{php_pear_dir}/Symfony/Component/Icu/Resources/data/curr/*.res
-%{php_pear_dir}/Symfony/Component/Icu/Resources/data/lang/*.res
-%{php_pear_dir}/Symfony/Component/Icu/Resources/data/locales/*.res
-%{php_pear_dir}/Symfony/Component/Icu/Resources/data/region/*.res
+%{php_data_dir}/Symfony/Component/Icu/Resources/data/curr/*.res
+%{php_data_dir}/Symfony/Component/Icu/Resources/data/lang/*.res
+%{php_data_dir}/Symfony/Component/Icu/Resources/data/locales/*.res
+%{php_data_dir}/Symfony/Component/Icu/Resources/data/region/*.res
