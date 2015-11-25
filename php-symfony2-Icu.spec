@@ -8,7 +8,7 @@
 Summary:	Symfony2 Icu Component
 Name:		php-symfony2-Icu
 Version:	1.2.2
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{pearname}/archive/v%{version}/%{pearname}-%{version}.tar.gz
@@ -35,7 +35,7 @@ through the API of the Intl component.
 mv Resources/data/*.txt .
 
 %build
-phpab -n -e '*/Tests/*' -o autoloader.php .
+phpab -n -e '*/Tests/*' -o autoload.php .
 
 %install
 rm -rf $RPM_BUILD_ROOT
