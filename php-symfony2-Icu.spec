@@ -19,6 +19,7 @@ BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	libicu >= 4.4
 Requires:	php(core) >= %{php_min_version}
 Requires:	php(ctype)
+Requires:	php-dirs >= 1.6
 Requires:	php-symfony2-Intl >= 2.3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
