@@ -8,7 +8,7 @@
 Summary:	Symfony2 Icu Component
 Name:		php-symfony2-Icu
 Version:	1.2.2
-Release:	2
+Release:	3
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{pearname}/archive/v%{version}/%{pearname}-%{version}.tar.gz
