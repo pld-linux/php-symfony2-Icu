@@ -4,7 +4,6 @@
 
 %define		pearname	Icu
 %define		php_min_version 5.3.3
-%include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Icu Component
 Name:		php-symfony2-Icu
 Version:	1.2.2
